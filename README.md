@@ -36,7 +36,7 @@ sensor_data_import/
 
 ## Data Model
 
-The application uses a simple `SensorData` model with composite primary key:
+The application uses a simple `SensorData` model:
 
 ```go
 type SensorData struct {
