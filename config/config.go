@@ -97,10 +97,6 @@ func Load(configPath string) (*Config, error) {
 	if config.Logging.LogLevel == "" {
 		config.Logging.LogLevel = "info"
 	}
-	// LogToConsole defaults to true if not specified
-	if !config.Logging.LogToConsole {
-		config.Logging.LogToConsole = true
-	}
 
 	// Validate the configuration
 	if err := config.Validate(); err != nil {
