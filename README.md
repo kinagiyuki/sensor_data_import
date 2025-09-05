@@ -95,6 +95,11 @@ logging:
    ```bash
    cd /path/to/your/projects
    ```
+2. **Copy `config-example.yaml` into `config.yaml` and config the setting as you need**:
+   - You can choose to use `MySQL`, `PostgreSQL` or `SQLite`. Please remember to fill the connection information
+     - *Remember to use `host.docker.internal` instead of `localhost` if you are inside the docker container*
+   - It is recommended to set `logging.log_to_console` to `false` when you are processing large volume file
+
 
 > If you are going to use docker to run instead of local `go` executable, please run the following commands before step 2:
 > 1. You need to change the host from `localhost` to `host.docker.internal` in `config.yaml` file
@@ -108,18 +113,22 @@ logging:
 >   docker run -it --name golang -v "$(pwd):/app -v "/path/to/target/directory:/app/target" -w /app --network host golang:1.24-alpine sh
 >   ```
 
-2. **Install dependencies**:
+3. **Install dependencies**:
    ```bash
    go mod tidy
    ```
 
-3. **Configure database connection**:
-   Edit `config.yaml` with your database credentials.
-   Remember to use `host.docker.internal` instead of `localhost` if you are inside the docker container
-
 4. **Run database migrations**:
    ```bash
    go run main.go migrate
+   ```
+
+5. **Scan the sensor data**:
+   ```bash
+   # If you are using docker container and mounted the target directory into the container
+   go run main.go scan target
+   # If you are running the program locally
+   go run main.go scan /path/to/target/directory
    ```
 
 > If you are using docker to run the program, please remember to remove the container after things done
