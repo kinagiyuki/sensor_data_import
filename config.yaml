@@ -1,0 +1,45 @@
+database:
+  # Supported drivers: mysql, postgres, sqlite
+  driver: mysql
+
+  # MySQL configuration (default)
+  mysql:
+    host: localhost
+    port: 3306
+    user: operator
+    password: "Pasw0rd1"
+    dbname: sensor
+    charset: utf8mb4
+    parse_time: true
+    loc: UTC
+
+  # PostgreSQL configuration
+  postgres:
+    host: localhost
+    port: 5432
+    user: postgres
+    password: ""
+    dbname: sensor
+    sslmode: disable
+    timezone: UTC
+
+  # SQLite configuration
+  sqlite:
+    path: ./sensor.db
+
+  # Connection pool settings
+  connection_pool:
+    max_idle_conns: 10
+    max_open_conns: 100
+    conn_max_lifetime: 3600 # seconds
+
+# Migration settings
+migration:
+  auto_migrate: false
+  migration_table: migrations
+
+# Logging settings
+logging:
+  log_file: result.log  # Log filename (default: result.log)
+  log_to_console: true  # Also output to console
+  log_level: info       # Log level: debug, info, warn, error

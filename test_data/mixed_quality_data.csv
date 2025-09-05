@@ -1,0 +1,11 @@
+timestamp,sensor_name,value
+2025-09-05T09:00:00Z,light_sensor_01,450.5
+2025-09-05T09:05:00Z,light_sensor_01,invalid_value
+invalid_timestamp,light_sensor_01,455.2
+2025-09-05T09:15:00Z,,460.8
+2025-09-05T09:20:00Z,light_sensor_01,465.1
+2025-09-05T09:25:00Z,light_sensor_02
+2025-09-05T09:30:00Z,light_sensor_02,470.3
+,light_sensor_02,472.8
+2025-09-05T09:40:00Z,light_sensor_02,475.5
+2025-09-05T09:45:00Z,light_sensor_03,480.2

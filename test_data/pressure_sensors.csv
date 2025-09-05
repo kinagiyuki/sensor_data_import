@@ -1,0 +1,11 @@
+timestamp,sensor_name,value
+2025-09-05T08:00:00,pressure_sensor_01,1013.25
+2025-09-05T08:05:00,pressure_sensor_01,1013.18
+2025-09-05T08:10:00,pressure_sensor_01,1013.32
+2025-09-05T08:15:00,pressure_sensor_01,1013.41
+2025-09-05T08:20:00,pressure_sensor_01,1013.28
+2025-09-05 08:00:00,pressure_sensor_02,1012.97
+2025-09-05 08:05:00,pressure_sensor_02,1013.05
+2025-09-05 08:10:00,pressure_sensor_02,1013.12
+2025-09-05 08:15:00,pressure_sensor_02,1013.23
+2025-09-05 08:20:00,pressure_sensor_02,1013.15

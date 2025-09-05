@@ -1,0 +1,16 @@
+timestamp,sensor_name,value
+2025-09-05T08:00:00Z,temperature_sensor_01,22.5
+2025-09-05T08:05:00Z,temperature_sensor_01,23.1
+2025-09-05T08:10:00Z,temperature_sensor_01,23.8
+2025-09-05T08:15:00Z,temperature_sensor_01,24.2
+2025-09-05T08:20:00Z,temperature_sensor_01,24.0
+2025-09-05T08:00:00Z,temperature_sensor_02,21.8
+2025-09-05T08:05:00Z,temperature_sensor_02,22.3
+2025-09-05T08:10:00Z,temperature_sensor_02,22.9
+2025-09-05T08:15:00Z,temperature_sensor_02,23.5
+2025-09-05T08:20:00Z,temperature_sensor_02,23.2
+2025-09-05T08:00:00Z,temperature_sensor_03,25.1
+2025-09-05T08:05:00Z,temperature_sensor_03,25.8
+2025-09-05T08:10:00Z,temperature_sensor_03,26.2
+2025-09-05T08:15:00Z,temperature_sensor_03,26.7
+2025-09-05T08:20:00Z,temperature_sensor_03,26.4

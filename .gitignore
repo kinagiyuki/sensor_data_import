@@ -1,0 +1,71 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+result.log
+sensor_import.log
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Large generated test data files (keep small manual test files)
+test_data/temperature_hourly.csv
+test_data/humidity_realtime.csv
+test_data/pressure_daily.csv
+test_data/light_sensors.csv
+test_data/vibration_sensors.csv
+
+# Any CSV files over 10KB (generated data)
+test_data/*_hourly.csv
+test_data/*_realtime.csv
+test_data/*_daily.csv
+test_data/*KB*.csv
+test_data/large_*.csv
+
+# Migration files created during testing (keep the initial one)
+migrations/*_test_*.sql
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+
+# Build artifacts
+dist/
+build/
+bin/
