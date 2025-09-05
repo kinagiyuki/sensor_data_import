@@ -69,3 +69,6 @@ temp/
 dist/
 build/
 bin/
+
+# Local config file
+config.yaml

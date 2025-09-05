@@ -6,7 +6,7 @@ database:
   mysql:
     host: localhost
     port: 3306
-    user: operator
+    user: mysql
     password: ""
     dbname: sensor
     charset: utf8mb4
