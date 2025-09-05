@@ -96,6 +96,18 @@ logging:
    cd /path/to/your/projects
    ```
 
+> If you are going to use docker to run instead of local `go` executable, please run the following commands before step 2:
+> 1. You need to change the host from `localhost` to `host.docker.internal` in `config.yaml` file
+> 2. Also, please mount your target directory into the docker container below `/app` directory
+> - For Windows or macOS environment
+>   ```bash
+>   docker run -it --name golang -v "$(pwd):/app" -v "/path/to/target/directory:/app/target" -w /app --add-host=host.docker.internal:host-gateway golang:1.24-alpine sh
+>   ```
+> - For Linux environment
+>   ```bash
+>   docker run -it --name golang -v "$(pwd):/app -v "/path/to/target/directory:/app/target" -w /app --network host golang:1.24-alpine sh
+>   ```
+
 2. **Install dependencies**:
    ```bash
    go mod tidy
@@ -103,11 +115,17 @@ logging:
 
 3. **Configure database connection**:
    Edit `config.yaml` with your database credentials.
+   Remember to use `host.docker.internal` instead of `localhost` if you are inside the docker container
 
 4. **Run database migrations**:
    ```bash
    go run main.go migrate
    ```
+
+> If you are using docker to run the program, please remember to remove the container after things done
+> ```bash
+> docker rm -f golang
+> ```
 
 ## Usage
 
