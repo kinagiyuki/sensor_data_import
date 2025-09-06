@@ -44,18 +44,7 @@ sensor_import.log
 *.sqlite3
 
 # Large generated test data files (keep small manual test files)
-test_data/temperature_hourly.csv
-test_data/humidity_realtime.csv
-test_data/pressure_daily.csv
-test_data/light_sensors.csv
-test_data/vibration_sensors.csv
-
-# Any CSV files over 10KB (generated data)
-test_data/*_hourly.csv
-test_data/*_realtime.csv
-test_data/*_daily.csv
-test_data/*KB*.csv
-test_data/large_*.csv
+test_data/large_files/*.csv
 
 # Migration files created during testing (keep the initial one)
 migrations/*_test_*.sql
