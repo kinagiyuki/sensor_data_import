@@ -118,12 +118,6 @@ WARN: Row 9 has invalid timestamp format:
 | large_sensor_data.csv | 42 | 1.7KB | Medium batch |
 | empty_file.csv | 0 | 0B | Empty file handling |
 | sensors/environmental_data.csv | 15 | 699B | Subdirectory ignored test |
-| **Generated Files** |
-| temperature_hourly.csv | 1,152 | 48KB | Hourly temperature data |
-| humidity_realtime.csv | 960 | 44KB | Real-time humidity |
-| pressure_daily.csv | 72 | 3.4KB | Daily pressure readings |
-| light_sensors.csv | 3,600 | 159KB | Light sensor array |
-| vibration_sensors.csv | 7,200 | 331KB | High-frequency vibration |
 
 ## Common Issues & Solutions
 

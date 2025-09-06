@@ -329,7 +329,7 @@ The project includes comprehensive test data in the `test_data/` directory:
 
 To generate large test files for performance testing:
 ```bash
-go run generate_test_data.go test_data
+go run generate_test_data.go test_data/large_files
 ```
 
 See `TESTING_GUIDE.md` and `test_data/README.md` for detailed testing instructions.
