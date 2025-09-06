@@ -3,7 +3,7 @@
 -- Description: Create sensor_data table with composite primary key on timestamp and sensor_name
 
 CREATE TABLE sensor_data (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
     timestamp TIMESTAMP NOT NULL,
     sensor_name VARCHAR(255) NOT NULL,
     value DOUBLE NOT NULL,
